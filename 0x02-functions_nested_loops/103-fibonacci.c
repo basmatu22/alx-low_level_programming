@@ -20,7 +20,7 @@ int main(void)
 		if (sum > 4000000)
 			break;
 		if ((sum % 2) == 0)
-			tota1_sum += sum;
+			total_sum += sum;
 		fib1 = fib2;
 		fib2 = sum;
 	}
