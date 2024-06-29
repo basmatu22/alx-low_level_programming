@@ -1,15 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 
 
+/**
+ *main - Entry point for testing the print_line function.
+ *Return: 0 on success
+ */
 int main(void)
 {
-	int a = 10;
-	int b = 20;
-	int result;
+	 print_line(5);  /* Expected output: _____\n */
+	 print_line(0);  /* Expected output: \n */
+	 print_line(-3); /* Expected output: \n */
+	 print_line(10); /* Expected output: ________\n */
 
-	result = mul(a, b);
-	printf("Multiplication of %d and %d is: %d\n", a, b, result);
-
-	return 0;
+	  return (0);
 }
