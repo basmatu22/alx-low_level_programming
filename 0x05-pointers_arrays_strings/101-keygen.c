@@ -13,8 +13,10 @@ int main(void)
 	char password[100];
 	int index = 0;
 	int rand_num;
+	int i;
 
 	srand(time(0));
+
 	while (sum < 2772)
 	{
 	rand_num = rand() % 94 + 33;
@@ -22,9 +24,12 @@ int main(void)
 	sum += rand_num;
 	}
 	password[index - 1] -= (sum - 2772);
-
-	for (int i = 0; i < index; i++)
+	i = 0;
+	while (i < index)
+	{
 	_putchar(password[i]);
+	i++;
+	}
 	_putchar('\n');
 
 	return (0);
